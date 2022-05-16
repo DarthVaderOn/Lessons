@@ -14,7 +14,7 @@
     где: AVG - функция возвращает среднее значение среди всех значений столбца.
 
 
-Функии SQL:
+Функции SQL:
 
     Функция SUM - возвращает сумму значений столбца таблицы базы данных.
 
@@ -263,7 +263,7 @@ Django: Регистрация.
             urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
             urlpatterns += staticfiles_urlpatterns()
 
-    Хэширование пароля
+    Хеширование пароля
 
         В фале registration.py пишем:
 
