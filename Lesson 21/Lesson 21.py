@@ -6,6 +6,12 @@
 Медиа (загрузка картинок и файлов)
 
 
+    В файле settings.py добавляем:
+
+        SPECTACULAR_SETTINGS = {
+            'COMPONENT_SPLIT_REQUEST': True
+        }
+
     Создаем новый APP:
 
          python manage.py startapp media_app
@@ -117,7 +123,7 @@
             class PostSerializer(serializers.ModelSerializer):
                 class Meta:
                     model = Post
-                    exclude = ['is_public']                                                     #
+                    exclude = ['is_public']                                                     # добавили
                     read_only_fields = ('id', 'user', 'is_public')
                     extra_kwargs = {
                         'file': {
@@ -132,7 +138,7 @@
                     default=serializers.CurrentUserDefault(),
                     source='user'
                 )
-                media = serializers.URLField(source='file.file.url', read_only = True)          #
+                media = serializers.URLField(source='file.file.url', read_only = True)          # добавили
 
 
 Router
