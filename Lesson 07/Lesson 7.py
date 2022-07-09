@@ -118,4 +118,3 @@ print()
 # Метод сравнения
 print(mercedes>car)                                             # return self.max_speed > other.max_speed  - тут other - car
 print()
-

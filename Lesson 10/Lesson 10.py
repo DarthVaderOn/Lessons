@@ -1,6 +1,6 @@
 # Методы
 
-
+"""
 import os.path
 from dataclasses import asdict, dataclass, field
 from time import sleep
@@ -173,3 +173,4 @@ if __name__ == '__main__':
      main(0.1)
      main2()
      main3()
+"""

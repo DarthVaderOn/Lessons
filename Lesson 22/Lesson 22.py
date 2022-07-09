@@ -321,5 +321,4 @@ Comments
             readonly_fields = ('created_at',)
             list_editable = ('is_public', 'tag', 'user',)
             search_fields = ('title', 'text')                                      # добавили
-
 """

@@ -82,6 +82,12 @@ Heroku
         Нажимаем на ссылку/ или на сайте Open app (если все хорошо проект откроется с ошибкой хоста)
 
 
+    Если возникла ошибка (ProgrammingError at /) relation "django_session" does not exist:
+
+        heroku run python manage.py makemigrations sessions
+        heroku run python manage.py migrate sessions
+
+
     Если возникла ошибка (Application error) смотрим отчёт:
 
         heroku logs --tail
@@ -346,6 +352,4 @@ Heroku
         Reveal Config Vars
 
         Добавляем переменные с .env
-
-
 """

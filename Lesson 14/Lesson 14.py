@@ -86,5 +86,4 @@ requirements.txt:
         pytest==7.1.1
         flask==2.1.1
         flask_sqlalchemy==2.5.1
-    
 """
