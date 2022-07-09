@@ -3,7 +3,7 @@
 
 
 """
-#Gitflow
+Gitflow
 
     Модель ветвления Gitflow:
 
