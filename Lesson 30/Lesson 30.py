@@ -246,6 +246,11 @@
             email = serializers.EmailField(required=True, write_only=True)
 
 
+             def validate_password(self, value: str) -> str:                                        # Хэш-значение, переданное пользователем
+
+                 return make_password(value)
+
+
     В views/user.py пишем код:
 
         from rest_framework.mixins import RetrieveModelMixin, ListModelMixin
